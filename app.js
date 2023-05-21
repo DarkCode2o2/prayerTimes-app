@@ -49,7 +49,7 @@ countries.forEach(country => {
         prayerTimes.innerHTML = ''
         for(days of data) {
             if(days.date.gregorian.day == currentDay) {
-                console.log(days)
+               
                 listTimes.innerHTML =
                 `
                     <h3>${parseInt(days.date.hijri.day)} ${days.date.hijri.month.en} ${days.date.hijri.year}</h3>
