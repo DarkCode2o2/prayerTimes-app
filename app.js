@@ -57,8 +57,6 @@ countries.forEach(country => {
                     <h3>In ${countryArray[0]}, ${countryArray[1]}</h3>
                 `
                 let prayers = days.timings
-
-                console.log(prayers)
         
                 prayerTimes.innerHTML = `
                 <li>Fajr: ${prayers.Fajr.split(' ')[0]}</li>
