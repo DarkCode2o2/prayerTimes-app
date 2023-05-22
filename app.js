@@ -58,13 +58,15 @@ countries.forEach(country => {
                 `
                 let prayers = days.timings
 
-            
-
-                for(let prayer in prayers) {
-                
-                    prayerTimes.innerHTML += `<li>${prayer}: ${prayers[prayer].split(' ')[0]}</li>`
-                
-                }
+                console.log(prayers)
+        
+                prayerTimes.innerHTML = `
+                <li>Fajr: ${prayers.Fajr.split(' ')[0]}</li>
+                <li>Dhuhr: ${prayers.Dhuhr.split(' ')[0]}</li>
+                <li>Asr: ${prayers.Asr.split(' ')[0]}</li>
+                <li>Maghrib: ${prayers.Maghrib.split(' ')[0]}</li>
+                <li>Isha: ${prayers.Isha.split(' ')[0]}</li>
+                `
             }
         
 
